@@ -1,21 +1,12 @@
-const express = require('express');
-const bodyParser = require("body-parser");
-
+const express = require("express");
 const app = express();
+const port = 3000;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: false
-}));
-
-app.listen(3000);
-
-
-app.post('/', async (req, res) => {
-
-    res.sendStatus(200);
-
+app.get("/", (req, res) => {
+  console.log("Hit the endpoint");
+  res.send("Hello World!");
 });
 
-// app.delete('/api/items/:id', async (req, res) => {
-// to get parameters: req.params.id ^^
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
