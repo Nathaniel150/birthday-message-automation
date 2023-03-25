@@ -8,7 +8,7 @@ export default function HomeScreen({ navigation }) {
 
       <Pressable 
         style={styles.container}
-        onPress={() => navigation.navigate("Header")}
+        onPress={() => navigation.navigate("Birthdays")}
       >
 
       <ImageBackground

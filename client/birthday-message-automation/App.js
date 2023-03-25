@@ -1,7 +1,7 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../birthday-message-automation/components/homeScreen';
-import Header from '../birthday-message-automation/components/header';
+import Birthdays from '../birthday-message-automation/components/birthdays';
 
 
 const Stack = createNativeStackNavigator();
@@ -17,8 +17,8 @@ export default function App() {
           // options={{title: 'Welcome'}}
         />
         <Stack.Screen
-          name="Header"
-          component={Header}
+          name="Birthdays"
+          component={Birthdays}
           // options={{title: 'Welcome'}}
         />
       </Stack.Navigator>
